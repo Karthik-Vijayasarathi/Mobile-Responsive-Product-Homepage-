@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100%;
+   
+   
+}
+.nav-bar{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+    margin-left: 4em;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width:50% ;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-family: 'Poppins';
+    
+}
+
+.nav-bar>*:last-child{
+    margin-left: 1em;
+    margin-right: 1em;   
+}
+
+.Hamburg-icon{
+    display: none;
+}
+
+.intro-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.left-section{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1%;
+    margin-left: 3.3em;
+    margin-top: 4em;
+    width: 50%;
+    
+}
+
+.right-section{
+    margin-right:4em;
+    width: 50%;
+    position: relative;
+}
+.headphone-div{
+    width: 70%;
+    margin-left: 9em;
+}
+
+.discount{
+    position: absolute;
+    width: 20%;
+    bottom: 3.5em;
+    left:6em ;
+    filter:drop-shadow(-0.4em 0.4em 0.15em grey);
+}
+
+.discount-content{
+    position: absolute;
+    bottom: 5.5em;
+    left: 7.5em;
+    font-family: 'Fredoka One';
+    color: white;
+    text-align: center;
+    }
+
+.discount-content h4{
+        font-size: 1rem;
+    }
+
+.discount-content h1{
+        font-size: 3rem;
+    }
+
+.headphone-div>*:last-child{
+    max-width: 100%;
+}
+
+.dots{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    column-gap:5%;
+    position: absolute;
+    left: 30%;
+    top: 30em;
+}
+
+.yellow-dot{
+    height: 1.5em;
+    width: 1.5em;
+    background-color:rgb(255, 255, 0);
+    border-radius: 50%;
+    
+}
+.tomato-dot{
+    height: 1.5em;
+    width: 1.5em;
+    background-color:#FE5E35;
+    border-radius: 50%;
+
+}
+
+.black-dot{
+    height: 1.5em;
+    width: 1.5em;
+    background-color:black;
+    border-radius: 50%;
+    
+}
+
+.right-section>*:last-child{
+    position: absolute;
+    background-color: #FE5E35;
+    color: white;
+    padding: 1em 2em;
+    font-size: 1rem;
+    border-radius: 2em;
+    border: none;
+    right: 33%;
+    top: 33em;
+}
+.left-section>*:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    font-size: 2.7rem;
+    font-family: 'Poppins';
+    width: 100%;
+}
+
+.left-section>*:nth-child(2){
+    font-size: 4.3rem;
+    font-family: 'Fredoka One';
+    width: 100%;
+}
+
+.left-section>*:nth-child(3){
+    font-family: 'Poppins';
+    width: 100%;
+}
+
+.sub-headlines{
+    margin-left: 3.5em;
+}
+
+.sub-headlines img {
+    height: 1.5em;
+    width: 1.5em;
+    background-color: #FE5E35;
+    border-radius: 50%;
+    padding: 0.3em 0.3em;  
+    
+}
+
+.sub-headline{
+    font-family: 'Poppins';
+    font-size: 1.75rem;
+}
+
+.text{
+    margin-top: 2em;
+    color: grey;
+    text-align: left;
+    font-family: 'Poppins';
+    font-size: 1rem;}
+    
+
+.left-section .action-btn{
+        background-color: #FE5E35;
+        color: white;
+        padding: 1em 2em;
+        font-size: 1rem;
+        border-radius: 2em;
+        border: none;
+        margin-left: 1em;
+    }
+
+    .left-section > .action-btns{
+    margin-top: 3em;
+    
+}
+    
+/* Adding media queries to make it Mobile Responsive . Validated for only one plus 6T device*/
+@media only screen and (max-width:600px) {
+
+    .nav-bar>*:nth-child(3){
+        display: none;
+        }
+    
+    .nav-bar{
+        margin-left: 2em;
+    }
+    
+    .nav-items{
+        display: none;
+    }
+
+    .Hamburg-icon{
+        display: inline;
+    }
+
+    .left-section>*:nth-child(1){
+        font-size: 1.5rem;
+    }
+    
+    .left-section>*:nth-child(2){
+        font-size: 2.3rem;
+    }
+    
+    .left-section>*:nth-child(3){
+        font-size: 1rem;
+    }
+
+    .left-section{
+        margin-left: 2em;
+    }
+
+    .left-section p{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+
+    .sub-headline{
+        font-size: 1rem;
+        margin-top: 1em;
+    }
+
+    .right-section{
+        position: absolute;
+        margin-right: 0;
+        margin-left: 0;
+        top: 10em;
+        right: 0.1em;
+
+    }
+    
+    .headphone-div{
+        margin-left: 3em;
+
+    }
+
+    .discount-content h4{
+        font-size: 0.4rem;
+        
+    }
+
+    .discount-content h1{
+        font-size: 1rem;
+    }
+
+    .discount{
+        left: 10em;
+        top: 7em;
+        filter:drop-shadow(-0.1em 0.1em 0.15em grey);
+    }
+
+    .discount-content{
+        left: 10.3em;
+        top: 7.5em;
+
+    }
+
+    .dots{
+        position: absolute;
+        left: 4em;
+        top: 14em;
+    }
+
+
+    .right-section>*:last-child{
+        right:1em;
+        top: 19em;
+        }
+
+    .action-btns{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        column-gap: 2em;
+        font-size: 2rem;
+    }
+
+}
